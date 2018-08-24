@@ -4,5 +4,5 @@ markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://truelines.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://fabfont.github.io/truelines.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 theme: jekyll-theme-minimal

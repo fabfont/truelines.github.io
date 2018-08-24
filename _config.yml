@@ -1,5 +1,6 @@
 me: TrueLines
 markdown: kramdown
+theme: minima
 
 permalink: /blog/:year/:month/:day/:title
 

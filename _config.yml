@@ -1,12 +1,41 @@
-title: TrueLines
-email: contact@truelines.com
+# Site
+name: TrueLines
+description: TrueLines web site
+meta_description: "TrueLines web site"
+logo: 'assets/images/TrueLines.png'
+favicon: 'assets/images/TrueLines.ico'
+paginate: 12
+baseurl: 
+#email: 'fabrice.fontenoy@truelines.tech'
+email: 'fabrice.fontenoy@gmail.com'
+google_analytics: 'UA-46278016-1'
+disqus: 'demowebsite'
+sharethis: '<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a6b2fe4fb197a0011c589f6&product=sticky-share-buttons"></script>'
+
+# Authors
+authors:
+  fabfont:
+    name: Fabrice Fontenoy
+    display_name: Fabrice Fontenoy
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: fabrice.fontenoy@truelines.tech
+    web: https://www.truelines.tech/
+    twitter: https://twitter.com/FabriceFontenoy
+    description: "Fondateur de TrueLines, Développeur et Formateur Java / Eclipse RCP"
+
+# Plugins
+plugins: 
+  - jekyll-paginate
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Other
 markdown: kramdown
-
-permalink: /blog/:year/:month/:day/:title
-
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://fabfont.github.io/truelines.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-
-plugins:
-  - jekyll-feed
-theme: jekyll-theme-minimal
+highlighter: rouge

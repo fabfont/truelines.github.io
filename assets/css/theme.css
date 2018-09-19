@@ -328,7 +328,7 @@ span.post-name a,span.post-read-more a:hover {
 	margin-bottom:1rem;
 }
 .intro {
-    background-image:url(../images/head.jpg);
+    background-image:url(../images/head2.jpg);
     background-size:cover;
     padding: 9rem 0;
     margin-top:-87px;
@@ -438,6 +438,8 @@ blockquote {
     display: block;
     margin-bottom: 2rem;
     box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1);
+    margin-left: auto;
+    margin-right: auto;
 }
 .article-post img, .article-post iframe {
     box-shadow:0 6px 10px 0 rgba(0,0,0,0.1);

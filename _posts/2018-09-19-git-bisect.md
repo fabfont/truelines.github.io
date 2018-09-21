@@ -4,6 +4,7 @@ title:  "Git Bisect"
 author: Fabrice Fontenoy
 categories: [ Git ]
 image: assets/images/git-bisect.png
+description: Cet article explique à quoi sert la commande git bisect et comment l'utiliser.
 comments: false
 ---
 

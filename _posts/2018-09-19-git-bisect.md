@@ -3,7 +3,7 @@ layout: post
 title:  "Git Bisect"
 author: Fabrice Fontenoy
 categories: [ Git ]
-image: assets/images/git-bisect.png
+image: assets/images/git-bisect/git-bisect.png
 description: Cet article explique à quoi sert la commande git bisect et comment l'utiliser.
 comments: false
 ---
@@ -20,7 +20,7 @@ Comment utilise-t-on `git bisect` ?
 
 Pour la suite de l'article, nous supposons que les commits suivant ont été effectués :
 
-[//]: #  "![git bisect log](../../../../assets/images/git-bisect-log.png "git bisect log"){: .center-image}"
+[//]: #  "![git bisect log](../../../../assets/images/common/git-bisect-log.png "git bisect log"){: .center-image}"
 
 	8d8885d (HEAD -> master, origin/master) Modify the third file
 	3a152d8 Modify the second file

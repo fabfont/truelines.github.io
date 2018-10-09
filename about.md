@@ -4,7 +4,7 @@ title: A propos
 comments: false
 ---
 
-![Photo profil](./assets/images/profile.jpg "Photo profil"){: width="200px" .center-image}
+![Photo profil](./assets/images/common/profile.jpg "Photo profil"){: width="200px" .center-image}
 
 Actuellement employé chez Thales Alenia Space à Cannes en tant que Design Authority de la ligne de produit du centre de contrôle satellite, je me lance à partir de Janvier 2019 en tant que développeur Java, Spring et Eclipse RCP indépendant et formateur Git et Maven.
 

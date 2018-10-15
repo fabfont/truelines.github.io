@@ -14,7 +14,8 @@ On va commencer par le plus simple : qu'est que `git pull` ?
 Et bien, c'est très simple, `git pull` c'est l'enchaînement de `git fetch` et de `git merge`.
 Oui bon, si vous ne savez pas ce qu'est `git fetch` et `git merge`, ça ne avance pas à grand chose...
 
-{% render_note 
+<div class="note">
+<!--img src="/assets/images/common/tip.png" height="42" width="42"/--><h1>Note</h1>
 
 <p>La commande <i>git pull</i> peut être configurée pour appliquer un <i>git rebase</i> à la place d'un <i>git merge</i> à la suite du <i>git fetch</i>.
 Pour que ce soit configuré de façon permanente, taper la commande suivante :</p>
@@ -25,7 +26,7 @@ Pour que ce soit configuré de façon permanente, taper la commande suivante :</
 
 <pre>git pull --rebase</pre>
 
-%} 
+</div>
 
 La commande `git fetch` permet de récupérer les modifications depuis le remote, c'est-à-dire depuis le serveur _git_ distant dans la plupart des cas.
 Les modifications sont récupérées et sont stoquées dans le dossier `.git` mais elles ne sont pas appliquées. 
@@ -64,13 +65,14 @@ Après avoir taper la commande `git merge dev` depuis la branche `master`, on ob
 	* 46db71c add file1.txt	
 
 
-{% render_note 
+<div class="note">
+<!--img src="/assets/images/common/tip.png" height="42" width="42"/--><h1>Note</h1>
 
 <p>Par défaut, lors d'un <i>merge</i>, si <i>git</i> le peut, il fera un <i>fast-forward</i> ce qui est assimilable à un <i>rebase</i>. 
 Ce comportement est désactivable avec l'option <code>--no-ff</code> de la commande <code>git merge</code>. 
 Nous en rediscuterons plus bas mais nous considérons ici que c'est cas pour simplifier la compréhension.</p>
 
-%}
+</div>
 
 Maintenant faisons la même chose avec un _rebase_ :
 
@@ -89,7 +91,9 @@ Ensuite il applique les commits de la branche sur laquelle on veut se "rebaser" 
 Ainsi, les commits `95a09fc`, `ffa8732` et `6f36e0b` sont appliqués.
 Enfin, les commits de la branche sur laquelle on est (ici `master`) sont appliqués. 
 
-{% render_note 
+
+<div class="note">
+<!--img src="/assets/images/common/tip.png" height="42" width="42"/--><h1>Note</h1>
 
 <p>Avez-vous remarqué quelque chose de particulier concernant les commits de la branche <i>master</i> qui ont été appliqués ?
 Et si je vous donne en plus du log précédent, le log de la branch remote <i>origin/master</i> ?</p>
@@ -113,7 +117,8 @@ Et si je vous donne en plus du log précédent, le log de la branch remote <i>or
 
 <p>Et oui, <i>git</i> a créé des nouveaux commits !</p>
 
-%}
+</div>
+
 
 
 
@@ -181,7 +186,8 @@ Cela nous aurait donné l'historique suivant :
 
 Je ne sais pas vous mais je trouve ça plus clair !
 
-{% render_note 
+<div class="note">
+<!--img src="/assets/images/common/tip.png" height="42" width="42"/--><h1>Note</h1>
 
 <p>Il y a quand même un détail à savoir et qui peut avoir son importance.
 
@@ -190,8 +196,7 @@ Lorsque vous faites un <i>merge</i>, vous allez peut-être être amené à réso
 Ce n'est pas le cas lorque vous faites un <i>rebase</i>. Comme vos commits sont appliqués un à un, vous serez amené peut-être à résoudre des conflits plusieurs fois de suite sur un même fichier.</p>
 
 <p>Afin d'éviter ça, il est recommandé de faire des <i>rebases</i> fréquemment.</p>
-
-%}
+</div>
 
 ### Cas du développement d'une _feature_
 

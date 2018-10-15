@@ -876,16 +876,29 @@ iframe {
     display: block;
 }
 
-.alert p {
+.note h1 {
+    font-size: 18px;	
+}
+
+.note p {
     font-size: 13px;	
 }
 
-.alert pre {
+.note pre {
     font-size: 13px;	
 }
 
-.alert span {
+.note span {
     font-size: 15px;	
     margin-left: 8px;
     font-weight: bold; 
 }
+
+.note {
+    background-color: #d0efff;
+    border-radius: 10px;
+    border: #d0efff 1px solid;
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    margin: 1.5em 1.5em 1.5em 1.5em;
+}
+

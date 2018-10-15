@@ -223,7 +223,7 @@ Vous avez compris, dans ce cas précis, je préconise plutôt de faire un _merge
 ![git merge 9](../../../../assets/images/git-merge-rebase/git-merge-9.png "git merge 9"){: .center-image}
 
 Ainsi, la branche _dev_ n'aura qu'un seul commit correspondant à votre _feature_ et ne sera donc pas poluée par tous les petits commits que vous auriez pu faire du développement.
-Et si tout fois, vous souhaitez garder l'historique du développement de votre _feature_, rien ne vous empêche de pousser votre branche sur le _remote_.
+Et si toute fois, vous souhaitez garder l'historique du développement de votre _feature_, rien ne vous empêche de pousser votre branche sur le _remote_.
 
 
 ### Cas de la récupération des commits de la branche _dev_ pour le développement de votre _feature_

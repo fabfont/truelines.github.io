@@ -340,7 +340,7 @@ span.post-name a,span.post-read-more a:hover {
     position: relative;
     height: 250px; 
     margin: 0 auto;
-    width: 60%;
+    width: 70%;
 }
 .intro .btn {
     background: #fff100;
@@ -917,13 +917,12 @@ iframe {
     flex-wrap: wrap;
     margin: 0 auto;
     padding-top: 1.0rem;
-    width: 60%;
+    width: 70%;
 }
 
 .card {
     /**background: #a1a0a8*/;
     background: #ffffff;
-    width: 450px;
     padding: 1rem;
     max-width: 90%;
     margin: 1.0rem;
@@ -931,7 +930,7 @@ iframe {
     border-radius: 10px;
     box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    flex: 1 0 30%;
+    flex: 1 0 28%;
     /* margin: 5px; */
 }
 
@@ -940,7 +939,7 @@ iframe {
 }*/
 
 .card h1 {
-    font-size: 25px;
+    font-size: 20px;
     color: #000;
     height: 70px;
     background: #ffffff;
@@ -949,7 +948,7 @@ iframe {
 }
 
 .card p {
-    font-size: 18px;
+    font-size: 15px;
     text-align: justify;
     text-justify: inter-word;
     color: #000;

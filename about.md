@@ -1,6 +1,8 @@
 ---
 layout: page
+titletag: Fabrice Fontenoy
 title: A propos
+description: Présentation de Fabrice Fontenoy, le fondateur de TrueLines
 comments: false
 ---
 

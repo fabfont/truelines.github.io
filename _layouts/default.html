@@ -4,7 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="{{ site.baseurl }}/assets/images/common/TrueLines.ico">    
-	<title>{{ page.title }} | {{site.name}}</title>
+	{% if page.titletag %}
+	<title>{{site.name}} | {{ page.titletag }}</title>
+	{% else %}
+	<title>{{site.name}} | {{ page.title }}</title>
+	{% endif %}
 	{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}    
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -71,7 +75,8 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="{{ site.baseurl }}/git/2018/09/19/git-bisect.html">Blog</a>
+                    <!--a class="nav-link" href="{{ site.baseurl }}/git/2018/09/19/git-bisect.html">Blog</a-->
+                    <a class="nav-link" href="{{ site.baseurl }}/blog">Blog</a>
                     <!--a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
                     <a class="dropdown-item" href="{{ site.baseurl }}/jekyll/tutorial/2018/01/12/is-intelligence-enough.html">Left Sidebar</a>

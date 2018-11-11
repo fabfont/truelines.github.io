@@ -5,18 +5,23 @@ title: Blog
 
 {% for category in site.categories %}
   <h3 id="{{ category[0] }}">{{ category[0] | capitalize }}</h3>
-  <ul>
     {% assign pages_list = category[1] %}
+	<section class="services">
     {% for post in pages_list %}
       {% if post.title != null %}
       {% if group == null or group == post.group %}
-      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></a></li>
+	    <div class="card">
+		<a href="{{ site.url }}{{ post.url }}">
+			<img src="{{ post.image }}" alt="{{ post.title }}"/>
+			<p>{{ post.description }}</p>    
+		</a>
+	    </div>
       {% endif %}
       {% endif %}
     {% endfor %}
+	</section>
     {% assign pages_list = nil %}
     {% assign group = nil %}
-  </ul>
 {% endfor %}
 
 </form>

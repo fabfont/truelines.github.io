@@ -2,7 +2,7 @@
 name: TrueLines
 description: TrueLines web site
 meta_description: "TrueLines web site"
-logo: 'assets/images/common/TrueLines_color.png'
+logo: 'assets/images/common/TrueLines.png'
 favicon: 'assets/images/common/TrueLines.ico'
 paginate: 12
 baseurl: 

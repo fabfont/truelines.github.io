@@ -917,7 +917,7 @@ iframe {
     flex-wrap: wrap;
     margin: 0 auto;
     padding-top: 1.0rem;
-    width: 70%;
+    width: 90%;
 }
 
 .card {
@@ -969,3 +969,6 @@ card:last-of-type {
 .tl-green {
     color: #c0ff00;
 }*/
+.slideshow-iframe {
+    margin-top: -40px;
+}

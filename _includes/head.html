@@ -1,0 +1,48 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="{{ site.baseurl }}/assets/images/common/TrueLines.ico">    
+	{% if page.titletag %}
+	<title>{{site.name}} | {{ page.titletag }}</title>
+	{% else %}
+	<title>{{site.name}} | {{ page.title }}</title>
+	{% endif %}
+	{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}    
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
+	<link href="{{ site.baseurl }}/assets/css/theme.css" rel="stylesheet">
+	<link href="{{ site.baseurl }}/assets/css/custom.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>
+	  function resizeIframe(obj) {
+	    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+	  }
+	</script>
+	    
+	{% if jekyll.environment == 'production' %}    
+	<!--script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', '{{site.google_analytics}}', 'auto');
+	  ga('send', 'pageview');
+	</script-->
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<!--script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'GA_TRACKING_ID');
+	</script-->
+	{% include analytics.html %}
+	{% endif %}  
+    
+	{% seo %}
+    
+</head>
+

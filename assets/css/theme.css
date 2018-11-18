@@ -117,7 +117,8 @@ section.recent-posts {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.94em;        
-	}
+    z-index: 999;
+}
 .navbar-toggleable-md .navbar-nav .nav-link.highlight {
     background: #6FD350;
     color: #fff;
@@ -129,6 +130,7 @@ section.recent-posts {
 }
 .navbar-toggler {
     z-index:9999;
+    position: absolute;
 }
 
 
@@ -970,5 +972,14 @@ card:last-of-type {
     color: #c0ff00;
 }*/
 .slideshow-iframe {
-    margin-top: -40px;
+    margin-top: -20px;
+    /*position: relative;
+    z-index: 0;*/
 }
+
+/*
+.collapse {
+     z-index: 999;
+     position: relative;
+}
+*/

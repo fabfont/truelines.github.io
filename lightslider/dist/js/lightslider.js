@@ -1,8 +1,8 @@
 /*! lightslider - v1.1.5 - 2015-10-31
 * https://github.com/sachinchoolur/lightslider
 * Copyright (c) 2015 Sachin N; Licensed MIT */
-(function ($, undefined) {
-    'use strict';
+(function ($) {
+    /*'use strict';*/
     var defaults = {
         item: 3,
         autoWidth: false,
@@ -246,7 +246,6 @@
                     refresh.calSW();
                     refresh.clone = function () {
                         if (refresh.calWidth(true) > elSize) {
-                            /**/
                             var tWr = 0,
                                 tI = 0;
                             for (var k = 0; k < $children.length; k++) {
@@ -258,7 +257,6 @@
                             }
                             var tItem = settings.autoWidth === true ? tI : settings.item;
 
-                            /**/
                             if (tItem < $el.find('.clone.left').length) {
                                 for (var i = 0; i < $el.find('.clone.left').length - tItem; i++) {
                                     $children.eq(i).remove();
@@ -270,7 +268,6 @@
                                     $children.eq(j).remove();
                                 }
                             }
-                            /**/
                             for (var n = $el.find('.clone.right').length; n < tItem; n++) {
                                 $el.find('.lslide').eq(n).clone().removeClass('lslide').addClass('clone right').appendTo($el);
                                 scene++;
@@ -1140,4 +1137,4 @@
         });
         return this;
     };
-}(jQuery));
+})(jQuery);

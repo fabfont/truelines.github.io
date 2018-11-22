@@ -1,6 +1,7 @@
 ---
 layout: iframe
-title: My slideshow
+title: Présentation
+titletag: TrueLines propose des services de développement Java, Spring, Eclipse RCP et de formation Git
 item: 1
 permalink: /index.html
 auto: true

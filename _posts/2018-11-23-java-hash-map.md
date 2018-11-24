@@ -8,7 +8,7 @@ description: Cet article explique comment fonctionne une hashmap et pourquoi il 
 comments: false
 ---
 
-## Qu'est-ce qui ne va pas avec les `HashMap` ?
+## Rien ne va plus dans la `HashMap` ?
 
 Considérons le bout de code suivant :
 
@@ -186,6 +186,8 @@ Redéfinissons alors la méthode `equals()` de façon à ce que notre test fonct
 public boolean equals(Object obj) {
 	boolean result = false;
 	if (obj instanceof Person) {
+		// We consider for simplification purpose that familyName 
+		// and firstName are not null
 		result = ((Person) obj).familyName.equals(familyName) 
 			&& ((Person) obj).firstName.equals(firstName);
 	}
@@ -218,26 +220,42 @@ Enfin ça, c'est vrai si le nombre de noeuds du seau est inférieur à la consta
 Au-delà de ce nombre, les noeuds de type `Node` sont convertis en `TreeNode`. Non seulement la conversion en arbre impacte la performance lors de l'ajout du neuvième élément mais ensuite, bien que la recherche dans un arbre est plus rapide, elle reste moins performante que la recherche dans une liste avec très peu d'éléments.
 Et inversement, lorsque la taille d'un seau devient inférieur à la constante `UNTREEIFY_THRESHOLD` égale à `6`, les `TreeNode` sont reconvertis en `Node`.
 
-Ainsi, il est d'usage de faire en sorte que deux éléments égaux retournent un unique hash code. De cette façon, chaque seau ne contiendra qu'un seul élément et la récupération d'élément se fera en temps constant.
-Une méthode fréquente consiste à utiliser des nombres premiers. La décomposition en nombres premiers vous dit quelque chose ? Et ben, on va utiliser ce principe. Comme un nombre se décompose de façon unique en nombre premier, si la méthode `hashCode()` utilise des nombres premiers pour former une décomposition à partir des champs de l'objet significatifs pour l'égalité (ie. utilisés également dans la méthode `equals()`) alors on est assuré que l'entier retourné est unique.
+Ainsi, il est d'usage de faire en sorte que deux éléments différents retournent autant que possible des hash codes différents. De cette façon, chaque seau ne contiendra qu'un seul élément ou presque et la récupération d'éléments se fera en temps constant.
+Je dédierai un post sur ce sujet mais, en pratique, on utilise un nombre premier, `31` par exemple, pour construire le hash code.
 
-Dans notre exemple, on peut alors implémenter la méthode `hashCode()` de la façon suivante :
+Dans notre exemple, en considérant pour simplifer que `firstName` et `familyName` sont non-nuls, on peut alors implémenter la méthode `hashCode()` de la façon suivante :
 
 ```java
 	/**
 	 * Prime number for hashCode computation
 	 */
-	private static final int PRIME_NUMBER = 3;
+	private static final int PRIME_NUMBER = 31;
 
 	@Override
 	public int hashCode() {
-		return firstName.hashCode() + PRIME_NUMBER * familyName.hashCode();
+		int result = 1;
+		// We consider for simplification purpose that familyName 
+		// and firstName are not null
+		result = PRIME_NUMBER * result + familyName.hashCode();
+		result = PRIME_NUMBER * result + firstName.hashCode();
+		return result;
 	}
 ```
 
+Si vous demandez à votre IDE préféré, Eclipse par exemple, de générer la méthode `hashCode()`, il vous générera une méthode similaire à la précédente avec en plus la gestion des champs `null`.
+
+Une autre méthode d'implémentation de la méthode `hashCode()` mais qui revient en fin de compte au même, est de faire appel à la méthode `Objects.hash(Object...)` de Java :
+
+```java
+	public int hashCode() {
+		return Objects.hash(firstName, familyName);
+	}
+```
+Si vous allez vous le code de la classe `Objects`, vous remarquerez que c'est la même opération qui est effectuée.
+
 ## Conclusion
 
-Nous avons vu dans cette article les grandes lignes du fonctionnement d'une `HashMap`, nécessaires à sa bonne utilisation. Sans connaître son fonctionnement ou si vous ne respectez pas les règles principales énoncées précédemment, vous allez forcément rencontrer des cas où un élément a mystérieusement disparu de la map.
-Pour plus sur les `HashMap`, je vous encourage à aller vous balader dans la classe `HashMap` pour comprendre le fonctionnement en détail.
+Nous avons vu dans cette article les grandes lignes du fonctionnement d'une `HashMap`, nécessaires à sa bonne utilisation. Sans connaître son fonctionnement ou si vous ne respectez pas les règles principales énoncées précédemment, vous allez forcément rencontrer des problèmes de disparitions mystérieuses d'éléments.
+Pour en savoir plus sur les `HashMap`, je vous encourage à aller vous balader dans la classe `HashMap` pour comprendre le fonctionnement en détail.
 
 

@@ -242,6 +242,10 @@
                     elSize = $el.outerWidth();
                 }
                 $children.addClass('lslide');
+		// Add class to images of the slideshow
+		for (var index = 0; index<$children.find('img').length; index++) {
+		    $children.find('img').eq(index).addClass('slideimage');
+		}
                 if (settings.loop === true && settings.mode === 'slide') {
                     refresh.calSW();
                     refresh.clone = function () {
@@ -890,6 +894,19 @@
         };
         plugin.build();
         refresh.init = function () {
+	    for (var index = 0; index<$children.find('img').length; index++) {
+		if (window.matchMedia("(orientation: portrait)").matches) {
+		    var img = $children.find('img').eq(index);
+		    var newsrc = img.attr('src').replace("\.jpeg","_portrait.jpeg"); 
+		    var newsrc = newsrc.replace("\.jpg","_portrait.jpg"); 
+		    var newsrc = newsrc.replace("\.png","_portrait.png"); 
+		    $children.find('img').eq(index).attr('src', newsrc);
+		} else {
+		    var img = $children.find('img').eq(index);
+		    var newsrc = img.attr('src').replace("_portrait", ""); 
+		    $children.find('img').eq(index).attr('src', newsrc);
+		}
+	    }
             refresh.chbreakpoint();
             if (settings.vertical === true) {
                 if (settings.item > 1) {

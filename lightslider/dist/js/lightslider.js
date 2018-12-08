@@ -897,9 +897,9 @@
 	    for (var index = 0; index<$children.find('img').length; index++) {
 		if (window.matchMedia("(orientation: portrait)").matches) {
 		    var img = $children.find('img').eq(index);
-		    var newsrc = img.attr('src').replace("\.jpeg","_portrait.jpeg"); 
-		    var newsrc = newsrc.replace("\.jpg","_portrait.jpg"); 
-		    var newsrc = newsrc.replace("\.png","_portrait.png"); 
+		    var newsrc = img.attr('src').replace("00\.jpeg","00_portrait.jpeg"); 
+		    var newsrc = newsrc.replace("00\.jpg","00_portrait.jpg"); 
+		    var newsrc = newsrc.replace("00\.png","00_portrait.png"); 
 		    $children.find('img').eq(index).attr('src', newsrc);
 		} else {
 		    var img = $children.find('img').eq(index);

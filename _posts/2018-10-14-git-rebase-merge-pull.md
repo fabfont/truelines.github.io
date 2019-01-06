@@ -12,7 +12,7 @@ comments: false
 
 On va commencer par le plus simple : qu'est que `git pull` ?
 Et bien, c'est très simple, `git pull` c'est l'enchaînement de `git fetch` et de `git merge`.
-Oui bon, si vous ne savez pas ce qu'est `git fetch` et `git merge`, ça ne avance pas à grand chose...
+Oui bon, si vous ne savez pas ce qu'est `git fetch` et `git merge`, ça n'avance pas à grand chose...
 
 <div class="note">
 <!--img src="/assets/images/common/tip.png" height="42" width="42"/--><h1>Note</h1>

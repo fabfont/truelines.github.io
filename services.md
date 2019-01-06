@@ -17,7 +17,7 @@ description: TrueLines propose des services de développement Java, Spring, Ecli
 	    <div class="card">
 		<h1>Assistance Technique</h1>
 		<img src="/assets/images/services/assistance_technique_225x225.jpg" alt="Assistance Technique"/>
-		<p>Besoin de renfort sur un gros projet ? Besoin d'un développement en mode Agile avec des spécifications évolutives ? TrueLines propose ses services de développement en assitance technique.</p>    
+		<p>Besoin de renfort sur un gros projet ? Besoin d'un développement en mode Agile avec des spécifications évolutives ? TrueLines propose ses services de développement en assistance technique.</p>    
 	    </div>
 	    <div class="card">
 		<h1>Développement au forfait</h1>
@@ -30,14 +30,14 @@ description: TrueLines propose des services de développement Java, Spring, Ecli
 		<p>Besoin de former vos équipes ? TrueLines propose des formations sur la programmation Java, la programmation orienté objet, Git ou encore Maven.</p>    
 	    </div>
 	    <div class="card">
-		<h1>Formation + Accompagenment</h1>
+		<h1>Formation + Accompagnement</h1>
 		<img src="/assets/images/services/training_followup_225x225.jpg" alt="Formation et mise en route"/>
 		<p>Parce qu'une formation n'est vraiment utile que si elle est mise en pratique par la suite, TrueLines propose un pack formation suivi d'une phase d'accompagnement sur votre projet afin de garantir que la formation est correctement mise en pratique.</p>    
 	    </div>
 	    <div class="card">
 		<h1>Bug Fixing</h1>
 		<img src="/assets/images/services/bug_225x225.jpg" alt="Résolution de bugs"/>
-		<p>Vous avez un logiciel existant mais plus personne pour le maintenir ? Une série de bogues à corriger pour une échéance proche ? TrueLines propose ses services services de bugs fixing.</p>    
+		<p>Vous avez un logiciel existant mais plus personne pour le maintenir ? Une série de bogues à corriger pour une échéance proche ? TrueLines propose ses services de bugs fixing.</p>    
 	    </div>
 	    <div class="card">
 		<h1>Audit</h1>

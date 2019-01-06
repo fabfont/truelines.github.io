@@ -143,6 +143,6 @@ Conclusion
 ----------
 
 J'en ai fini avec les fonctionnalités principales de la commande `git bisect`.
-D'autres options sont néanmoins dispobibles telles que `git bisect log` pour voir ce qui a été fait jusqu'à maintenant (quels commits ont été marqués comme bons et mauvais) ou encore `git bisect visualize` pour connaître quels sont les prochains commits suspects qui vont être passés en revue.
+D'autres options sont néanmoins disponibles telles que `git bisect log` pour voir ce qui a été fait jusqu'à maintenant (quels commits ont été marqués comme bons et mauvais) ou encore `git bisect visualize` pour connaître quels sont les prochains commits suspects qui vont être passés en revue.
 Pour plus d'information, je vous laisse regarder le _man_ de `git bisect`.
 

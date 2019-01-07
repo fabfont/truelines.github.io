@@ -128,5 +128,5 @@ Cette section liste quelques autres clefs de configuration que j'ai l'habitude d
 
 ## Conclusion
 
-Nous avons vu dans cette article les bases de la configuration _git_ et nous avons vu quelques exemples de clefs de configuration.
+Nous avons vu dans cet article les bases de la configuration _git_ et nous avons vu quelques exemples de clefs de configuration.
 Beaucoup d'autres clefs de configuration existent néanmoins. N'hésitez pas à consulter la page d'aide de `git config` pour trouver une clef de configuration en particulier ou bien si vous avez des problèmes d'insomnies :-). 

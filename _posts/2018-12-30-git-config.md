@@ -101,7 +101,7 @@ Cette section liste un ensemble d'alias bien pratique pour moi mais libre vous d
 
 Cette section liste quelques autres clefs de configuration que j'ai l'habitude de configurer.
 
-*	`git config --global pull.rebase true
+*	`git config --global pull.rebase true`
 
 	De base, lorsque vous faites un `git pull`, _git_ fait un `git fetch` suivi d'un `git merge`. Si vous avez lu [mon article sur git rebase/merge/pull]({{ site.baseurl }}{% post_url 2018-10-14-git-rebase-merge-pull %}) (et j'en suis sûr :-) ), il est souvent préférable de faire un _rebase_ plutôt qu'un _merge_. Cette clef de configuration permet alors à la commande `git pull` d'effectuer un _rebase_ à la _place_ d'un merge.
 
@@ -129,4 +129,4 @@ Cette section liste quelques autres clefs de configuration que j'ai l'habitude d
 ## Conclusion
 
 Nous avons vu dans cet article les bases de la configuration _git_ et nous avons vu quelques exemples de clefs de configuration.
-Beaucoup d'autres clefs de configuration existent néanmoins. N'hésitez pas à consulter la page d'aide de `git config` pour trouver une clef de configuration en particulier ou bien si vous avez des problèmes d'insomnies :-). 
+Beaucoup d'autres clefs de configuration existent néanmoins. N'hésitez pas à consulter la page d'aide de `git config` pour trouver une clef de configuration en particulier ou bien si vous avez des problèmes d'insomnie :-). 

@@ -921,6 +921,15 @@ iframe {
     width: 90%;
 }
 
+.portfolio {
+    background: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 1.0rem;
+    width: 90%;
+}
+
 .card {
     /**background: #a1a0a8*/;
     background: #ffffff;

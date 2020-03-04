@@ -6,7 +6,14 @@ License: Attribution-NonCommercial 4.0 International
          Free for personal use. For commercial use, please read: https://www.wowthemes.net/freebies-license/
 */
 body {
-    font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    /*font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;*/
+
+    font: 16px/1.5 verdana, helvetica-neue, helvetica, arial, san-serif;
+    background: black;
+    background-image: url(../images/home/home2.jpg);
+    /*color: #ececec;*/
+    padding: 0;
+    margin: 0;
 }
 .mainheading {
 	padding: 0rem 0rem 1rem 0;
@@ -82,12 +89,20 @@ section.recent-posts {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    padding-left: 10px;
 }
-.layout-page  .section-title span {
+.layout-page .section-title span {
     font-size: 2rem;
     text-transform: none;
     letter-spacing:0;
 }
+
+.layout-post-index .section-title span {
+    font-size: 2rem;
+    text-transform: none;
+    letter-spacing:0;
+}
+
 .layout-page .section-title h2:before {top:17px;}
 .article-post ol, .article-post ul { margin-bottom:1.5rem;}
 .article-post ol ol, .article-post ul ul {   
@@ -913,16 +928,16 @@ iframe {
 }
 
 .services {
-    background: #ffffff;
+    /*background: #ffffff;*/
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 0 auto 3.0rem auto;
     padding-top: 1.0rem;
     width: 90%;
 }
 
 .portfolio {
-    background: #ffffff;
+    /*background: #ffffff;*/
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -933,7 +948,6 @@ iframe {
 .card {
     /**background: #a1a0a8*/;
     background: #ffffff;
-    padding: 1rem;
     max-width: 270px;
     margin: 1.0rem;
     text-align: center;
@@ -941,6 +955,7 @@ iframe {
     box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     flex: 1 0 28%;
+    padding: 15px;
     /* margin: 5px; */
 }
 card:first-of-type {
@@ -981,10 +996,74 @@ card:last-of-type {
 }*/
 .slideshow-iframe {
     margin-top: 100px;
+    width: 70%;
     /*position: relative;
     z-index: 0;*/
 }
 
+.layout-iframe {
+    align-content: center;
+    display: grid;
+}
+
+.home-card {
+    /**background: #a1a0a8*/;
+    background: #ffffff;
+    padding: 1rem;
+    max-width: 100%;
+    margin: 1.0rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    flex: 1 0 28%;
+    /* margin: 5px; */
+}
+
+.blog-card {
+    /**background: #a1a0a8*/;
+    background: #ffffff;
+    padding: 1rem;
+    max-width: 100%;
+    margin: 1.0rem;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    /*flex: 1 0 28%;*/
+    display: flex;
+    justify: "flex-start";
+    /* margin: 5px; */
+}
+
+.blog-item-card {
+    /**background: #a1a0a8*/;
+    background: #ffffff;
+    max-width: 200px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    flex: 1 0 28%;
+    padding: 15px;
+    /* margin: 5px; */
+}
+
+.home-card > img {
+    margin-bottom: 20px;
+}
+
+.home-card a {color:inherit; box-shadow:inset 0 -2px 0 rgba(255, 229, 31,1), 0 2px 0 rgba(255, 229, 31,1);}
+.home-card a:hover {box-shadow:inset 0 -30px 0 rgba(255, 229, 31,1), 0 2px 0 rgba(255, 229, 31,1);text-decoration:none;}
+
+.home-card p {
+    text-align: justify;
+}
+
+.home-card h1 {
+    margin-bottom: 3.0rem;
+}
 /*
 .collapse {
      z-index: 999;

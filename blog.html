@@ -4,24 +4,22 @@ title: Blog
 ---
 
 {% for category in site.categories %}
-  <h3 id="{{ category[0] }}">{{ category[0] | capitalize }}</h3>
+    <h3 id="{{ category[0] }}">{{ category[0] | capitalize }}</h3>
     {% assign pages_list = category[1] %}
-	<section class="services">
+    <section class="services">
     {% for post in pages_list %}
-      {% if post.title != null %}
-      {% if group == null or group == post.group %}
-	    <div class="card">
-		<a href="{{ site.url }}{{ post.url }}">
-			<img src="{{ post.image }}" alt="{{ post.title }}"/>
-			<p>{{ post.description }}</p>    
-		</a>
-	    </div>
-      {% endif %}
-      {% endif %}
+        {% if post.title != null %}
+            {% if group == null or group == post.group %}
+                <div class="blog-item-card">
+                    <a href="{{ site.url }}{{ post.url }}">
+                        <img src="{{ post.image }}" alt="{{ post.title }}"/>
+                        <p>{{ post.description }}</p>
+                    </a>
+                </div>
+            {% endif %}
+        {% endif %}
     {% endfor %}
-	</section>
+    </section>
     {% assign pages_list = nil %}
     {% assign group = nil %}
 {% endfor %}
-
-</form>

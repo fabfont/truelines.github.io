@@ -23,5 +23,5 @@ scrolling="no" onload="resizeIframe(this)" allowtransparency="true"/-->
     <h1>Bienvenue</h1>
     <p>Avec plus de 10 ans d'expérience dans le développement logiciel, non seulement côté fournisseur mais également
      côté client, je propose mes services en développement logiciel, formation et accompagnement.</p>
-    <p>n'hésitez pas à me contacter en m'envoyant un message depuis la page de <a href="contact.html" target="_blank">Contact</a> ou via mon profil <a href="http://www.linkedin.com/in/FabriceFontenoy" target="_blank">LinkedIn</a>.</p>
+    <p>N'hésitez pas à me contacter en m'envoyant un message depuis la page de <a href="contact.html" target="_blank">Contact</a> ou via mon profil <a href="http://www.linkedin.com/in/FabriceFontenoy" target="_blank">LinkedIn</a>.</p>
 </div>
